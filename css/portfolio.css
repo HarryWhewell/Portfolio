@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'LatoThin';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Thin'), local('LatoThin'), url('../fonts/Lato-Thin.woff');
+}
+@font-face {
+    font-family: 'LatoLatinRegular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('LatoLatin Regular'), local('LatoLatinRegular'), url('../fonts/LatoLatin-Regular.woff');
+}
+body{
+    background-color: #E0E0E0;
+    font-family:  LatoLatinRegular, sans-serif;
+}
