@@ -12,26 +12,242 @@
     <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="css/bootstrap.css">
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
     <script src="js/bootstrap.js" type="text/javascript"></script>
     <script src="js/jquery.js" type="text/javascript"></script>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <center><h1>Harry Whewell</h1></center>
-            <center><p>Website coming soon..</p></center>
-        </div>
+
+<!-- Navigation -->
+<a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+            <a href="#top"  onclick = $("#menu-close").click(); >Harry Whewell</a>
+        </li>
+        <li>
+            <a href="index.html" onclick = $("#menu-close").click(); >Home</a>
+        </li>
+        <li>
+            <a href="#about" onclick = $("#menu-close").click(); >About</a>
+        </li>
+        <li>
+            <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+        </li>
+        <li>
+            <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+        </li>
+        <li>
+            <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<header id="top" class="header">
+    <div class="text-vertical-center">
+        <h1>Harry Whewell</h1>
+        <hr width="30%">
+        <h2>Developer</h2>
+        <br>
     </div>
-    <hr>
-    <!-- Footer -->
-    <footer>
+</header>
+
+<!-- About -->
+<section id="about" class="about">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright &copy; Harry Whewell 2016</p>
+            <div class="col-lg-12 text-center">
+                <h2>A highly-motivated full stack developer</h2>
+                <p class="lead">Looking to secure a position in a software development organisation,
+                    <a href="#">where I can bring immediate and strategic value.</a></p>
             </div>
         </div>
-    </footer>
-</div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Services -->
+<section id="services" class="services bg-primary">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Services</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa devicon-javascript-plain  fa-stack-2x"></i>
+                            </span>
+                            <h4>
+                                <strong>Javascript</strong>
+                            </h4>
+                            <p>Confident use of Angular.js, Express.js and Node.js</p>
+                            <a href="#" class="btn btn-light text-primary"><b>Learn More</b></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa devicon-php-plain fa-stack-2x" ></i>
+                            </span>
+                            <h4>
+                                <strong>PHP</strong>
+                            </h4>
+                            <p>Knowledge in Apache, mySQL and the Laravel framework.</p>
+                            <a href="#" class="btn btn-light text-primary"><b>Learn More</b></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="devicon-java-plain fa-stack-2x "></i>
+                            </span>
+                            <h4>
+                                <strong>Java</strong>
+                            </h4>
+                            <p>Experience with Spring MVC, JDBC and Hibernate ORM.</p>
+                            <a href="#" class="btn btn-light text-primary"><b>Learn More</b></a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa devicon-html5-plain fa-stack-2x "></i>
+                            </span>
+                            <h4>
+                                <strong>HTML5</strong>
+                            </h4>
+                            <p>Advance understanding of HTML5 and CSS3. </p>
+                            <a href="#" class="btn btn-light text-primary" ><b>Learn More</b></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Portfolio -->
+<!--<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h2>Our Work</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a href="#">
+                                <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a href="#">
+                                <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a href="#">
+                                <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="portfolio-item">
+                            <a href="#">
+                                <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                &lt;!&ndash; /.row (nested) &ndash;&gt;
+                <a href="#" class="btn btn-dark">View More Items</a>
+            </div>
+            &lt;!&ndash; /.col-lg-10 &ndash;&gt;
+        </div>
+        &lt;!&ndash; /.row &ndash;&gt;
+    </div>
+    &lt;!&ndash; /.container &ndash;&gt;
+</section>-->
+
+<!-- Footer -->
+<footer>
+    <div class="container" id="contact">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <h4><strong>Harry Whewell</strong>
+                </h4>
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-phone fa-fw"></i> 07724 463932</li>
+                    <li><i class="fa fa-envelope-o fa-fw"></i><a class="text-primary"
+                                                                 href="mailto:name@example.com" >harrywhewell@gmail.com</a>
+                    </li>
+                </ul>
+                <br>
+                <ul class="list-inline">
+                    <li>
+                        <a href="#"><i class="fa  fa-github fa-fw fa-3x text-primary"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-bitbucket  fa-fw fa-3x text-primary"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-linkedin fa-fw fa-3x text-primary"></i></a>
+                    </li>
+                </ul>
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; harrywhewell.com 2016</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Custom Theme JavaScript -->
+<script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
